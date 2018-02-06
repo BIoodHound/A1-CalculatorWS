@@ -31,7 +31,15 @@ public class Calc {
      */
     @WebMethod(operationName = "Sum")
     public int Sum(@WebParam(name = "n1") int n1, @WebParam(name = "n2") int n2) {
-        int total = n1 + n2;//TODO write your implementation code here:
-        return total;
+        return n1 + n2;
+    }
+
+    /**
+     * Web service operation
+     */
+    @WebMethod(operationName = "rest")
+    public int rest(@WebParam(name = "n1") int n1, @WebParam(name = "n2") int n2) {
+        //TODO write your implementation code here:
+        return n1 - n2;
     }
 }
